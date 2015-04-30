@@ -16,7 +16,7 @@ class WebViewController: UIViewController {
     //Importing external stylesheet
     //http://makeapppie.com/2014/10/28/swift-swift-using-uiwebviews-in-swift/
     
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var defaults = ["textFontSize":12,"textFontColor":"blue", "backgroundColor":"black"]
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var navBarTitle: UINavigationItem!
@@ -25,7 +25,7 @@ class WebViewController: UIViewController {
     {
         super.viewDidLoad()
         navBarTitle.title = appDelegate.getCurrArticle().category
-        webView.loadRequest(NSURLRequest(URL: NSURL(string: appDelegate.getCurrArticle().webURL)!))
+        //webView.loadRequest(NSURLRequest(URL: NSURL(string: appDelegate.getCurrArticle().webURL)!))
         var loadStyles = "var script = document.createElement('link'); script.type = 'text/css'; script.rel = 'stylesheet'; script.href = 'customCss.css';document.getElementsByTagName('body')[0].appendChild(script);"
         
         webView.stringByEvaluatingJavaScriptFromString(loadStyles)
@@ -42,7 +42,7 @@ class WebViewController: UIViewController {
     {
         webView.opaque = false
         //webView.backgroundColor = UIColor.blackColor()
-        var backgroundColor = defaults["backgroundColor"]! as NSString
+        var backgroundColor = defaults["backgroundColor"]! as! NSString
         var jsString = "document.getElementsByTagName('html')[0].style.setProperty('background-color','blue','important')"
         webView.stringByEvaluatingJavaScriptFromString(jsString)
         
@@ -52,14 +52,14 @@ class WebViewController: UIViewController {
     
     func changeFontColorToBlue(webView:UIWebView)
     {
-        var textFontColor = defaults["textFontColor"]! as NSString
+        var textFontColor = defaults["textFontColor"] as! NSString
         var jsString = "document.getElementsByTagName('body')[0].style.setProperty('color','blue','important')"
         webView.stringByEvaluatingJavaScriptFromString(jsString)
     }
     
     func increaseWebViewFontSize(webView:UIWebView)
     {
-        var textFontSizeTemp = defaults["textFontSize"]! as Int
+        var textFontSizeTemp = defaults["textFontSize"]! as! Int
         
         textFontSizeTemp  = textFontSizeTemp + 1
         

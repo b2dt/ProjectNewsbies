@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203BFC801AD6FC6E00F1FD49 /* customCss.css in Resources */ = {isa = PBXBuildFile; fileRef = 203BFC7F1AD6FC6E00F1FD49 /* customCss.css */; };
 		20E7CF261ACAE557003609C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF251ACAE557003609C3 /* AppDelegate.swift */; };
 		20E7CF2B1ACAE557003609C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E7CF291ACAE557003609C3 /* Main.storyboard */; };
 		20E7CF2D1ACAE557003609C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E7CF2C1ACAE557003609C3 /* Images.xcassets */; };
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		203BFC7F1AD6FC6E00F1FD49 /* customCss.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = customCss.css; sourceTree = "<group>"; };
 		20E7CF201ACAE557003609C3 /* Newsbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E7CF241ACAE557003609C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20E7CF251ACAE557003609C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				20E7CF471ACAE6BE003609C3 /* WebViewController.swift */,
 				20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */,
 				20E7CF4D1ACAF142003609C3 /* Article.swift */,
-				203BFC7F1AD6FC6E00F1FD49 /* customCss.css */,
 			);
 			path = Newsbies;
 			sourceTree = "<group>";
@@ -204,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203BFC801AD6FC6E00F1FD49 /* customCss.css in Resources */,
 				20E7CF2B1ACAE557003609C3 /* Main.storyboard in Resources */,
 				20E7CF301ACAE557003609C3 /* LaunchScreen.xib in Resources */,
 				20E7CF2D1ACAE557003609C3 /* Images.xcassets in Resources */,

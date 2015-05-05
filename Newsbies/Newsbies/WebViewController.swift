@@ -18,7 +18,6 @@ class WebViewController: UIViewController{
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var defaults = ["textFontSize":12,"textFontColor":"blue", "backgroundColor":"black"]
-    @IBOutlet weak var navBarTitle: UINavigationItem!
     @IBOutlet weak var headline: UILabel!
     @IBOutlet weak var body: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -26,9 +25,9 @@ class WebViewController: UIViewController{
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        headline.numberOfLines = 0
-        body.numberOfLines = 0
-        navBarTitle.title = appDelegate.getCurrArticle().category
+        //headline.numberOfLines = 0
+        //body.numberOfLines = 0
+        self.navigationItem.title = appDelegate.getCurrArticle().category
         headline.text = appDelegate.getCurrArticle().articleName
         body.text = appDelegate.getCurrArticle().body
         //scrollView.addSubview(articleView)

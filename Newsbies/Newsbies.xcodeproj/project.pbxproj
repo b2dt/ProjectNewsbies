@@ -20,6 +20,14 @@
 		20E7CF481ACAE6BE003609C3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF471ACAE6BE003609C3 /* WebViewController.swift */; };
 		20E7CF4C1ACAECD4003609C3 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */; };
 		20E7CF4E1ACAF142003609C3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF4D1ACAF142003609C3 /* Article.swift */; };
+		4FD79A231B001D3600D81543 /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A141B001D3600D81543 /* HRBrightnessCursor.m */; };
+		4FD79A241B001D3600D81543 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A161B001D3600D81543 /* HRBrightnessSlider.m */; };
+		4FD79A251B001D3600D81543 /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A181B001D3600D81543 /* HRColorCursor.m */; };
+		4FD79A261B001D3600D81543 /* HRColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A1A1B001D3600D81543 /* HRColorInfoView.m */; };
+		4FD79A271B001D3600D81543 /* HRColorMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A1C1B001D3600D81543 /* HRColorMapView.m */; };
+		4FD79A281B001D3600D81543 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A1E1B001D3600D81543 /* HRColorPickerView.m */; };
+		4FD79A291B001D3600D81543 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A201B001D3600D81543 /* HRHSVColorUtil.m */; };
+		4FD79A2A1B001D3600D81543 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A221B001D3600D81543 /* UIImage+CoreGraphics.m */; };
 		53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D22B0D1AFE9D600044AA48 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +59,22 @@
 		20E7CF471ACAE6BE003609C3 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		20E7CF4D1ACAF142003609C3 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		4FD79A131B001D3600D81543 /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRBrightnessCursor.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessCursor.h"; sourceTree = "<group>"; };
+		4FD79A141B001D3600D81543 /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessCursor.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessCursor.m"; sourceTree = "<group>"; };
+		4FD79A151B001D3600D81543 /* HRBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRBrightnessSlider.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessSlider.h"; sourceTree = "<group>"; };
+		4FD79A161B001D3600D81543 /* HRBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessSlider.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessSlider.m"; sourceTree = "<group>"; };
+		4FD79A171B001D3600D81543 /* HRColorCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorCursor.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorCursor.h"; sourceTree = "<group>"; };
+		4FD79A181B001D3600D81543 /* HRColorCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorCursor.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorCursor.m"; sourceTree = "<group>"; };
+		4FD79A191B001D3600D81543 /* HRColorInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorInfoView.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorInfoView.h"; sourceTree = "<group>"; };
+		4FD79A1A1B001D3600D81543 /* HRColorInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorInfoView.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorInfoView.m"; sourceTree = "<group>"; };
+		4FD79A1B1B001D3600D81543 /* HRColorMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorMapView.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorMapView.h"; sourceTree = "<group>"; };
+		4FD79A1C1B001D3600D81543 /* HRColorMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorMapView.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorMapView.m"; sourceTree = "<group>"; };
+		4FD79A1D1B001D3600D81543 /* HRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorPickerView.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorPickerView.h"; sourceTree = "<group>"; };
+		4FD79A1E1B001D3600D81543 /* HRColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorPickerView.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorPickerView.m"; sourceTree = "<group>"; };
+		4FD79A1F1B001D3600D81543 /* HRHSVColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRHSVColorUtil.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRHSVColorUtil.h"; sourceTree = "<group>"; };
+		4FD79A201B001D3600D81543 /* HRHSVColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRHSVColorUtil.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRHSVColorUtil.m"; sourceTree = "<group>"; };
+		4FD79A211B001D3600D81543 /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.h"; sourceTree = "<group>"; };
+		4FD79A221B001D3600D81543 /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.m"; sourceTree = "<group>"; };
 		53D22B0D1AFE9D600044AA48 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +138,22 @@
 		20E7CF231ACAE557003609C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FD79A131B001D3600D81543 /* HRBrightnessCursor.h */,
+				4FD79A141B001D3600D81543 /* HRBrightnessCursor.m */,
+				4FD79A151B001D3600D81543 /* HRBrightnessSlider.h */,
+				4FD79A161B001D3600D81543 /* HRBrightnessSlider.m */,
+				4FD79A171B001D3600D81543 /* HRColorCursor.h */,
+				4FD79A181B001D3600D81543 /* HRColorCursor.m */,
+				4FD79A191B001D3600D81543 /* HRColorInfoView.h */,
+				4FD79A1A1B001D3600D81543 /* HRColorInfoView.m */,
+				4FD79A1B1B001D3600D81543 /* HRColorMapView.h */,
+				4FD79A1C1B001D3600D81543 /* HRColorMapView.m */,
+				4FD79A1D1B001D3600D81543 /* HRColorPickerView.h */,
+				4FD79A1E1B001D3600D81543 /* HRColorPickerView.m */,
+				4FD79A1F1B001D3600D81543 /* HRHSVColorUtil.h */,
+				4FD79A201B001D3600D81543 /* HRHSVColorUtil.m */,
+				4FD79A211B001D3600D81543 /* UIImage+CoreGraphics.h */,
+				4FD79A221B001D3600D81543 /* UIImage+CoreGraphics.m */,
 				20E7CF241ACAE557003609C3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -236,16 +276,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD79A281B001D3600D81543 /* HRColorPickerView.m in Sources */,
+				4FD79A261B001D3600D81543 /* HRColorInfoView.m in Sources */,
+				4FD79A231B001D3600D81543 /* HRBrightnessCursor.m in Sources */,
 				204C6EFB1B0009C200F6CEDB /* ThemeViewController.swift in Sources */,
 				20E7CF4C1ACAECD4003609C3 /* JsonParser.swift in Sources */,
 				20E7CF261ACAE557003609C3 /* AppDelegate.swift in Sources */,
 				20E7CF481ACAE6BE003609C3 /* WebViewController.swift in Sources */,
+				4FD79A2A1B001D3600D81543 /* UIImage+CoreGraphics.m in Sources */,
+				4FD79A271B001D3600D81543 /* HRColorMapView.m in Sources */,
+				4FD79A241B001D3600D81543 /* HRBrightnessSlider.m in Sources */,
 				53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */,
 				204C6EF51AFEFAEC00F6CEDB /* CustomizeViewController.swift in Sources */,
 				20E7CF461ACAE58D003609C3 /* HomeViewController.swift in Sources */,
+				4FD79A291B001D3600D81543 /* HRHSVColorUtil.m in Sources */,
 				204C6EF91B00080200F6CEDB /* BackgroundViewController.swift in Sources */,
 				20E7CF4E1ACAF142003609C3 /* Article.swift in Sources */,
 				204C6EF71B00028300F6CEDB /* TextViewController.swift in Sources */,
+				4FD79A251B001D3600D81543 /* HRColorCursor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

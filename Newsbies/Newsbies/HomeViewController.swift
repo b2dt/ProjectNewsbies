@@ -56,13 +56,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         performSegueWithIdentifier("segue", sender: self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
         println("preparing in tableViewController for segue")
-        
-        let destViewController = segue.destinationViewController as! WebViewController
+        if(segue.identifier=="customize")
+        {
+            let destViewController = segue.destinationViewController as! CustomizeViewController
+        }
+        else if (segue.identifier=="segue")
+        {
+            let destViewController = segue.destinationViewController as! WebViewController
+        }
     }
-    
-    @IBAction func returnToHome(segue: UIStoryboardSegue) {
-        println("return to HomeViewController")
+
+    @IBAction func goToCustomize(segue: UIStoryboardSegue) {
+        performSegueWithIdentifier("customize", sender: self)
     }
 }

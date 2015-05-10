@@ -5,6 +5,24 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Customize View Controller-->
+        <scene sceneID="iUh-bz-Qwv">
+            <objects>
+                <viewController id="apD-2r-LBH" customClass="CustomizeViewController" customModule="Newsbies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iaC-zc-djF"/>
+                        <viewControllerLayoutGuide type="bottom" id="0G7-YZ-vDg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ITA-Gb-kRy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fq3-G4-HuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1930" y="-343"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -70,7 +88,12 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ZZR-mL-X1X">
-                        <barButtonItem key="rightBarButtonItem" title="Customize" id="8kH-Xk-BNN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Customize" id="8kH-Xk-BNN">
+                            <connections>
+                                <action selector="goToCustomize:" destination="BYZ-38-t0r" id="OgB-vd-RqD"/>
+                                <segue destination="apD-2r-LBH" kind="show" identifier="customize" id="xzd-1R-9ja"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tView" destination="XFz-bh-obu" id="WJp-Oc-XvY"/>

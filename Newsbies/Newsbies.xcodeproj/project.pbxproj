@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204C6EF51AFEFAEC00F6CEDB /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C6EF41AFEFAEC00F6CEDB /* CustomizeViewController.swift */; };
 		20E7CF261ACAE557003609C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF251ACAE557003609C3 /* AppDelegate.swift */; };
 		20E7CF2B1ACAE557003609C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E7CF291ACAE557003609C3 /* Main.storyboard */; };
 		20E7CF2D1ACAE557003609C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E7CF2C1ACAE557003609C3 /* Images.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204C6EF41AFEFAEC00F6CEDB /* CustomizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
 		20E7CF201ACAE557003609C3 /* Newsbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E7CF241ACAE557003609C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20E7CF251ACAE557003609C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +96,8 @@
 				20E7CF471ACAE6BE003609C3 /* WebViewController.swift */,
 				20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */,
 				20E7CF4D1ACAF142003609C3 /* Article.swift */,
-				203BFC7F1AD6FC6E00F1FD49 /* customCss.css */,
 				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
+				204C6EF41AFEFAEC00F6CEDB /* CustomizeViewController.swift */,
 			);
 			path = Newsbies;
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 				20E7CF261ACAE557003609C3 /* AppDelegate.swift in Sources */,
 				20E7CF481ACAE6BE003609C3 /* WebViewController.swift in Sources */,
 				53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */,
+				204C6EF51AFEFAEC00F6CEDB /* CustomizeViewController.swift in Sources */,
 				20E7CF461ACAE58D003609C3 /* HomeViewController.swift in Sources */,
 				20E7CF4E1ACAF142003609C3 /* Article.swift in Sources */,
 			);

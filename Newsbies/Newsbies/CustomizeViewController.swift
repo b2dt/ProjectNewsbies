@@ -10,9 +10,16 @@ import UIKit
 
 class CustomizeViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func switcher(sender: UISegmentedControl) {
+        
+        
+    }
+    
 }

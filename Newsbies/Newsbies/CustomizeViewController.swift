@@ -9,16 +9,12 @@
 import UIKit
 
 class CustomizeViewController: UIViewController {
-<<<<<<< HEAD
-=======
 
     @IBOutlet weak var sampleText: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var TextView: UIView!
     @IBOutlet weak var BackgroundView: UIView!
     @IBOutlet weak var ThemeView: UIView!
->>>>>>> cf7959f2efb01f41fcefcdb461cffb1811ad0ad0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,9 +24,6 @@ class CustomizeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-<<<<<<< HEAD
-    
-=======
     @IBAction func indexChanged(sender: UISegmentedControl)
     {
         switch segmentedControl.selectedSegmentIndex {
@@ -53,5 +46,4 @@ class CustomizeViewController: UIViewController {
             break;
         }
     }
->>>>>>> cf7959f2efb01f41fcefcdb461cffb1811ad0ad0
 }

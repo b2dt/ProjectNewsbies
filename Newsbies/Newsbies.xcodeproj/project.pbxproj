@@ -16,6 +16,7 @@
 		20E7CF481ACAE6BE003609C3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF471ACAE6BE003609C3 /* WebViewController.swift */; };
 		20E7CF4C1ACAECD4003609C3 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */; };
 		20E7CF4E1ACAF142003609C3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF4D1ACAF142003609C3 /* Article.swift */; };
+		53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D22B0D1AFE9D600044AA48 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		20E7CF471ACAE6BE003609C3 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		20E7CF4D1ACAF142003609C3 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		53D22B0D1AFE9D600044AA48 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,11 @@
 				20E7CF471ACAE6BE003609C3 /* WebViewController.swift */,
 				20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */,
 				20E7CF4D1ACAF142003609C3 /* Article.swift */,
+<<<<<<< HEAD
+=======
+				203BFC7F1AD6FC6E00F1FD49 /* customCss.css */,
+				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
+>>>>>>> cam
 			);
 			path = Newsbies;
 			sourceTree = "<group>";
@@ -224,6 +231,7 @@
 				20E7CF4C1ACAECD4003609C3 /* JsonParser.swift in Sources */,
 				20E7CF261ACAE557003609C3 /* AppDelegate.swift in Sources */,
 				20E7CF481ACAE6BE003609C3 /* WebViewController.swift in Sources */,
+				53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */,
 				20E7CF461ACAE58D003609C3 /* HomeViewController.swift in Sources */,
 				20E7CF4E1ACAF142003609C3 /* Article.swift in Sources */,
 			);

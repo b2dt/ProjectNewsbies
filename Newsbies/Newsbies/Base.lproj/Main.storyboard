@@ -18,10 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-jb-81A">
-                                <rect key="frame" x="239" y="89" width="123" height="29"/>
+                                <rect key="frame" x="169" y="89" width="263" height="29"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Text"/>
+                                    <segment title="Background"/>
+                                    <segment title="Themes"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
@@ -34,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fq3-G4-HuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="-563"/>
+            <point key="canvasLocation" x="1930" y="-343"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -117,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="1192" y="327"/>
         </scene>
-        <!--Title-->
+        <!--Web View Controller-->
         <scene sceneID="lez-wI-i3A">
             <objects>
                 <viewController id="RYK-mu-jfi" customClass="WebViewController" customModule="Newsbies" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,19 +170,11 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="MIl-Qv-SaU">
-                        <barButtonItem key="rightBarButtonItem" title="Customize" id="rOd-M4-eMC">
-                            <connections>
-                                <action selector="goToCustomizeFromWebView:" destination="RYK-mu-jfi" id="gwp-OB-m5P"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="body" destination="rka-c4-Dxo" id="ia0-Gp-ZLi"/>
                         <outlet property="headline" destination="vfV-UL-Ce1" id="9GV-qh-tBo"/>
                         <outlet property="scrollView" destination="TnN-Mc-d1V" id="ziL-k4-QWg"/>
-                        <segue destination="apD-2r-LBH" kind="show" identifier="custWebView" id="Qmi-YN-AFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiQ-g5-Gxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,7 +200,4 @@
             <point key="canvasLocation" x="380" y="327"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Qmi-YN-AFb"/>
-    </inferredMetricsTieBreakers>
 </document>

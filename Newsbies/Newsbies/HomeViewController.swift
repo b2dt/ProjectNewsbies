@@ -12,10 +12,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 {
     @IBOutlet weak var tView: UITableView!
     let prototypeCellIdentifier = "cell"
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var articleList = [Article]()
     var jsonParser: JsonParser = JsonParser()
-    var urlString:String = "http://api.nytimes.com/svc/search/v2/articlesearch.json?=new+york+times&api-key=5057b2a351479ebc6a1582e02270d75d:5:71571215"
+    //var urlString:String = "http://api.nytimes.com/svc/search/v2/articlesearch.json?=new+york+times&api-key=5057b2a351479ebc6a1582e02270d75d:5:71571215"
+    var urlString:String = "http://ec2-52-11-214-35.us-west-2.compute.amazonaws.com:5050/data?ids=183762,183802"
     
     override func viewDidLoad()
     {
@@ -39,7 +40,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         println("Setting the article title of \(appDelegate.articlesList[indexPath.row].articleName)")
-        let cell = tView.dequeueReusableCellWithIdentifier(prototypeCellIdentifier) as UITableViewCell
+        let cell = tView.dequeueReusableCellWithIdentifier(prototypeCellIdentifier) as! UITableViewCell
         
         cell.textLabel?.text = appDelegate.articlesList[indexPath.row].articleName
         
@@ -58,7 +59,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         println("preparing in tableViewController for segue")
         
-        let destViewController = segue.destinationViewController as WebViewController
+        let destViewController = segue.destinationViewController as! WebViewController
     }
     
     @IBAction func returnToHome(segue: UIStoryboardSegue) {

@@ -39,4 +39,13 @@ class WebViewController: UIViewController{
     {
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let destViewController = segue.destinationViewController as! CustomizeViewController
+    }
+    
+    @IBAction func goToCustomizeFromWebView(segue: UIStoryboardSegue) {
+        performSegueWithIdentifier("custWebView", sender: self)
+    }
 }

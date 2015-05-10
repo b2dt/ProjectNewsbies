@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fq3-G4-HuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="-343"/>
+            <point key="canvasLocation" x="1930" y="-577"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="1192" y="327"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Title-->
         <scene sceneID="lez-wI-i3A">
             <objects>
                 <viewController id="RYK-mu-jfi" customClass="WebViewController" customModule="Newsbies" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,11 +173,19 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="MKM-nF-xSp">
+                        <barButtonItem key="rightBarButtonItem" title="Customize" id="uTa-yo-7Ed">
+                            <connections>
+                                <action selector="goToCustomizeFromWebView:" destination="RYK-mu-jfi" id="EMF-UE-qXW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="body" destination="rka-c4-Dxo" id="ia0-Gp-ZLi"/>
                         <outlet property="headline" destination="vfV-UL-Ce1" id="9GV-qh-tBo"/>
                         <outlet property="scrollView" destination="TnN-Mc-d1V" id="ziL-k4-QWg"/>
+                        <segue destination="apD-2r-LBH" kind="show" identifier="custWebView" id="pyR-dJ-qFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiQ-g5-Gxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,4 +211,7 @@
             <point key="canvasLocation" x="380" y="327"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pyR-dJ-qFX"/>
+    </inferredMetricsTieBreakers>
 </document>

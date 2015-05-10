@@ -35,11 +35,6 @@ class WebViewController: UIViewController{
         scrollView.contentSize=CGSizeMake(scrollView.contentSize.width, headline.frame.size.height+body.frame.size.height+30)
     }
 
-    @IBAction func increaseFontSize(sender: AnyObject)
-    {
-        
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         let destViewController = segue.destinationViewController as! CustomizeViewController

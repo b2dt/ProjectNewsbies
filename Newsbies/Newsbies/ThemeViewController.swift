@@ -8,11 +8,18 @@
 
 import UIKit
 
+protocol ChildThemeViewControllerDelegate
+{
+    func childViewControllerDidPressButton(childViewController:ThemeViewController)
+}
 class ThemeViewController: UIViewController {
+
+    var delegate:ChildThemeViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        var delegate:ChildThemeViewControllerDelegate?
+
     }
 }

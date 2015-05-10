@@ -37,19 +37,19 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BH-R6-Nhv">
                                 <rect key="frame" x="16" y="127" width="568" height="317"/>
                                 <connections>
-                                    <segue destination="bEX-U3-Rde" kind="embed" id="n9R-Sg-NoD"/>
+                                    <segue destination="bEX-U3-Rde" kind="embed" identifier="text" id="n9R-Sg-NoD"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caI-7d-Q6Z">
                                 <rect key="frame" x="16" y="127" width="568" height="317"/>
                                 <connections>
-                                    <segue destination="PdC-3c-crZ" kind="embed" id="mfb-Kl-dsX"/>
+                                    <segue destination="PdC-3c-crZ" kind="embed" identifier="background" id="mfb-Kl-dsX"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEo-rS-GRw">
                                 <rect key="frame" x="16" y="127" width="568" height="317"/>
                                 <connections>
-                                    <segue destination="khy-t5-5xp" kind="embed" id="imD-G0-8rN"/>
+                                    <segue destination="khy-t5-5xp" kind="embed" identifier="theme" id="imD-G0-8rN"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -339,6 +339,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="FontText" destination="H4f-E0-fkH" id="rHJ-yh-P91"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjj-hI-O0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,14 +365,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-MF-bLG">
+                                <rect key="frame" x="259" y="191" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWasPressed:" destination="PdC-3c-crZ" eventType="touchUpInside" id="bTb-I2-sf9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="V9A-ux-tuL" secondAttribute="centerY" id="0p6-Tb-IL2"/>
+                            <constraint firstItem="hwY-MF-bLG" firstAttribute="top" secondItem="V9A-ux-tuL" secondAttribute="bottom" constant="22" id="Wef-Dq-Oic"/>
+                            <constraint firstAttribute="centerX" secondItem="hwY-MF-bLG" secondAttribute="centerX" constant="2" id="bBE-sO-X2d"/>
                             <constraint firstAttribute="centerX" secondItem="V9A-ux-tuL" secondAttribute="centerX" id="utA-2S-GFp"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="backgroundButton" destination="hwY-MF-bLG" id="NeX-bn-7uL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BA2-Vf-5JM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

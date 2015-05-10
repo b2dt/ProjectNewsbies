@@ -18,10 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-jb-81A">
-                                <rect key="frame" x="239" y="89" width="123" height="29"/>
+                                <rect key="frame" x="169" y="89" width="263" height="29"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Text"/>
+                                    <segment title="Background"/>
+                                    <segment title="Themes"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>

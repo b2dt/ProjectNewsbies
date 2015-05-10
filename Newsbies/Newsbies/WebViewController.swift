@@ -29,7 +29,8 @@ class WebViewController: UIViewController{
         //body.numberOfLines = 0
         self.navigationItem.title = appDelegate.getCurrArticle().category
         headline.text = appDelegate.getCurrArticle().articleName
-        body.text = appDelegate.getCurrArticle().body
+        body.text = appDelegate.getCurrArticle().body.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
+        headline.font = UIFont(name: headline.font.fontName, size: 28)
         //scrollView.addSubview(articleView)
         scrollView.contentSize=CGSizeMake(scrollView.contentSize.width, headline.frame.size.height+body.frame.size.height+30)
     }

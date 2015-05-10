@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZN5-lR-Is3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZN5-lR-Is3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -35,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fq3-G4-HuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="-563"/>
+            <point key="canvasLocation" x="1930" y="-343"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="1192" y="327"/>
         </scene>
-        <!--Title-->
+        <!--Web View Controller-->
         <scene sceneID="lez-wI-i3A">
             <objects>
                 <viewController id="RYK-mu-jfi" customClass="WebViewController" customModule="Newsbies" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,19 +170,11 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="MIl-Qv-SaU">
-                        <barButtonItem key="rightBarButtonItem" title="Customize" id="rOd-M4-eMC">
-                            <connections>
-                                <action selector="goToCustomizeFromWebView:" destination="RYK-mu-jfi" id="gwp-OB-m5P"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="body" destination="rka-c4-Dxo" id="ia0-Gp-ZLi"/>
                         <outlet property="headline" destination="vfV-UL-Ce1" id="9GV-qh-tBo"/>
                         <outlet property="scrollView" destination="TnN-Mc-d1V" id="ziL-k4-QWg"/>
-                        <segue destination="apD-2r-LBH" kind="show" identifier="custWebView" id="Qmi-YN-AFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiQ-g5-Gxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,7 +200,4 @@
             <point key="canvasLocation" x="380" y="327"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Qmi-YN-AFb"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-jb-81A">
-                                <rect key="frame" x="169" y="89" width="263" height="29"/>
+                                <rect key="frame" x="169" y="84" width="263" height="29"/>
                                 <segments>
                                     <segment title="Text"/>
                                     <segment title="Background"/>
@@ -31,10 +31,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p4P-jb-81A" firstAttribute="top" secondItem="iaC-zc-djF" secondAttribute="bottom" constant="25" id="aBF-6b-G3i"/>
+                            <constraint firstItem="p4P-jb-81A" firstAttribute="top" secondItem="iaC-zc-djF" secondAttribute="bottom" constant="20" id="aBF-6b-G3i"/>
                             <constraint firstAttribute="centerX" secondItem="p4P-jb-81A" secondAttribute="centerX" id="qBP-fW-1tj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BottomContainer" destination="p4P-jb-81A" id="O8G-xv-i3p"/>
+                        <outlet property="segmentedControl" destination="p4P-jb-81A" id="1lx-k3-1bq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fq3-G4-HuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

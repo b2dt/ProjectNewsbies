@@ -96,8 +96,6 @@
 				20E7CF471ACAE6BE003609C3 /* WebViewController.swift */,
 				20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */,
 				20E7CF4D1ACAF142003609C3 /* Article.swift */,
-				203BFC7F1AD6FC6E00F1FD49 /* customCss.css */,
-				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
 				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
 				204C6EF41AFEFAEC00F6CEDB /* CustomizeViewController.swift */,
 			);

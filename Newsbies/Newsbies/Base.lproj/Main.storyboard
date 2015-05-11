@@ -392,6 +392,7 @@
                     <size key="freeformSize" width="568" height="500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjj-hI-O0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="fkb-rT-e8Q" customClass="HRColorPickerView"/>
             </objects>
             <point key="canvasLocation" x="2721" y="-1087"/>
         </scene>

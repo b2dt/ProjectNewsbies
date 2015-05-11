@@ -1,0 +1,13 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.49.6 clang-602.0.49)"
+options: "ee70ef7204c607ecbc50c5fda16f19c0"
+inputs: 
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/ThemeViewController.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/JsonParser.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/AppDelegate.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/WebViewController.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/Theme.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/CustomizeViewController.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/HomeViewController.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/BackgroundViewController.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/Article.swift"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/TextViewController.swift"

@@ -21,6 +21,7 @@ class CustomizeViewController: UIViewController {
         sampleText.text = "Text"
         BackgroundView.hidden=true
         ThemeView.hidden=true
+        let MyBC = HRBrightnessCursor()
         // Do any additional setup after loading the view.
     }
     

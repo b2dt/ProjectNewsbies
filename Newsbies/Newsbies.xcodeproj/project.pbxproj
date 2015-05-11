@@ -75,6 +75,7 @@
 		4FD79A201B001D3600D81543 /* HRHSVColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRHSVColorUtil.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRHSVColorUtil.m"; sourceTree = "<group>"; };
 		4FD79A211B001D3600D81543 /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.h"; sourceTree = "<group>"; };
 		4FD79A221B001D3600D81543 /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.m"; sourceTree = "<group>"; };
+		4FD79A2B1B00219400D81543 /* My-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My-Bridging-Header.h"; sourceTree = "<group>"; };
 		53D22B0D1AFE9D600044AA48 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +132,7 @@
 				204C6EF61B00028300F6CEDB /* TextViewController.swift */,
 				204C6EF81B00080200F6CEDB /* BackgroundViewController.swift */,
 				204C6EFA1B0009C200F6CEDB /* ThemeViewController.swift */,
+				4FD79A2B1B00219400D81543 /* My-Bridging-Header.h */,
 			);
 			path = Newsbies;
 			sourceTree = "<group>";
@@ -421,6 +423,7 @@
 				INFOPLIST_FILE = Newsbies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Newsbies/My-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -431,6 +434,7 @@
 				INFOPLIST_FILE = Newsbies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Newsbies/My-Bridging-Header.h";
 			};
 			name = Release;
 		};

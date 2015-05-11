@@ -1,0 +1,47 @@
+### Swift dependencies file v0 ###
+provides:
+- "AppDelegate"
+nominals:
+- "C8Newsbies11AppDelegate"
+class-members:
+- "currArticle"
+- "applicationWillEnterForeground"
+- "applicationDidBecomeActive"
+- "articlesList"
+- "getCurrArticle"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
+- "window"
+- "setCurArticleByIndex"
+- "application"
+- "applicationDidEnterBackground"
+top-level:
+- "Bool"
+- "UIWindow"
+- "NSObject"
+- "AnyObject"
+- "Array"
+- "UIResponder"
+- "Article"
+- "Int"
+- "UIApplicationDelegate"
+- !private "BooleanLiteralType"
+- "UIApplication"
+member-access:
+- "PSo21UIApplicationDelegate"
+- "Sa"
+- "C8Newsbies11AppDelegate"
+- "CSo8NSObject"
+- "PSs9AnyObject"
+- "CSo11UIResponder"
+dynamic-lookup:
+cross-module:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"

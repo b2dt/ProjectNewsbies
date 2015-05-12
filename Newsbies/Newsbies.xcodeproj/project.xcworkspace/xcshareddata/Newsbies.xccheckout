@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2E53070A-08D5-4A5C-936D-60F416CC8EF0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Newsbies</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0978FDA47C13397F93AAD48668F4ACFD10C8E1E7</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/b2dt/ProjectNewsbies.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Newsbies/Newsbies.xcodeproj</string>
+	<string>Newsbies/Newsbies.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0978FDA47C13397F93AAD48668F4ACFD10C8E1E7</key>

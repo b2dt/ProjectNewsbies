@@ -6,12 +6,16 @@ nominals:
 class-members:
 - "viewDidLoad"
 top-level:
+- !private "UIColor"
 - "UIViewController"
 member-access:
-- "CSo11UIResponder"
+- !private "CSo7UIColor"
 - "PSs9AnyObject"
-- "CSo16UIViewController"
 - "CSo8NSObject"
+- "CSo16UIViewController"
+- !private "CSo6UIView"
+- "CSo11UIResponder"
+- !private "C8Newsbies24BackgroundViewController"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

@@ -4,15 +4,23 @@ provides:
 nominals:
 - "C8Newsbies18TextViewController"
 class-members:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 top-level:
+- !private "BooleanLiteralType"
+- !private "HRColorMapView"
+- !private "UIColor"
 - "UIViewController"
 member-access:
+- !private "CSo6UIView"
 - "CSo11UIResponder"
+- !private "CSo7UIColor"
 - "CSo8NSObject"
 - "PSs9AnyObject"
+- !private "C8Newsbies18TextViewController"
 - "CSo16UIViewController"
+- !private "CSo14HRColorMapView"
+- !private "CSo9UIControl"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

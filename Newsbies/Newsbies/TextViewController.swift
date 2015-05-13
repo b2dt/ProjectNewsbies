@@ -12,6 +12,9 @@ class TextViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let myColorWheel = HRColorMapView()
+        myColorWheel.hidden = false
+        self.view.backgroundColor = UIColor.lightGrayColor()
 
         // Do any additional setup after loading the view.
     }

@@ -20,7 +20,6 @@
 		20E7CF481ACAE6BE003609C3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF471ACAE6BE003609C3 /* WebViewController.swift */; };
 		20E7CF4C1ACAECD4003609C3 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */; };
 		20E7CF4E1ACAF142003609C3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CF4D1ACAF142003609C3 /* Article.swift */; };
-<<<<<<< HEAD
 		4FD79A231B001D3600D81543 /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A141B001D3600D81543 /* HRBrightnessCursor.m */; };
 		4FD79A241B001D3600D81543 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A161B001D3600D81543 /* HRBrightnessSlider.m */; };
 		4FD79A251B001D3600D81543 /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A181B001D3600D81543 /* HRColorCursor.m */; };
@@ -29,9 +28,7 @@
 		4FD79A281B001D3600D81543 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A1E1B001D3600D81543 /* HRColorPickerView.m */; };
 		4FD79A291B001D3600D81543 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A201B001D3600D81543 /* HRHSVColorUtil.m */; };
 		4FD79A2A1B001D3600D81543 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD79A221B001D3600D81543 /* UIImage+CoreGraphics.m */; };
-=======
 		5344D43A1B00E3F700F89F69 /* Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5344D4391B00E3F700F89F69 /* Customization.swift */; };
->>>>>>> 17ce6816eac4d41f8de183695bea5b330a5332d3
 		53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D22B0D1AFE9D600044AA48 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +60,6 @@
 		20E7CF471ACAE6BE003609C3 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		20E7CF4D1ACAF142003609C3 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		4FD79A131B001D3600D81543 /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRBrightnessCursor.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessCursor.h"; sourceTree = "<group>"; };
 		4FD79A141B001D3600D81543 /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessCursor.m; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessCursor.m"; sourceTree = "<group>"; };
 		4FD79A151B001D3600D81543 /* HRBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRBrightnessSlider.h; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessSlider.h"; sourceTree = "<group>"; };
@@ -81,9 +77,7 @@
 		4FD79A211B001D3600D81543 /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.h"; sourceTree = "<group>"; };
 		4FD79A221B001D3600D81543 /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "../../NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.m"; sourceTree = "<group>"; };
 		4FD79A2B1B00219400D81543 /* My-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My-Bridging-Header.h"; sourceTree = "<group>"; };
-=======
 		5344D4391B00E3F700F89F69 /* Customization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customization.swift; sourceTree = "<group>"; };
->>>>>>> 17ce6816eac4d41f8de183695bea5b330a5332d3
 		53D22B0D1AFE9D600044AA48 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,23 +129,12 @@
 				20E7CF471ACAE6BE003609C3 /* WebViewController.swift */,
 				20E7CF4B1ACAECD4003609C3 /* JsonParser.swift */,
 				20E7CF4D1ACAF142003609C3 /* Article.swift */,
-<<<<<<< HEAD
 				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
 				204C6EF41AFEFAEC00F6CEDB /* CustomizeViewController.swift */,
 				204C6EF61B00028300F6CEDB /* TextViewController.swift */,
 				204C6EF81B00080200F6CEDB /* BackgroundViewController.swift */,
 				204C6EFA1B0009C200F6CEDB /* ThemeViewController.swift */,
 				4FD79A2B1B00219400D81543 /* My-Bridging-Header.h */,
-=======
-				203BFC7F1AD6FC6E00F1FD49 /* customCss.css */,
-				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
-<<<<<<< HEAD
-				53D22B0D1AFE9D600044AA48 /* Theme.swift */,
-				204C6EF41AFEFAEC00F6CEDB /* CustomizeViewController.swift */,
-=======
-				5344D4391B00E3F700F89F69 /* Customization.swift */,
->>>>>>> cam
->>>>>>> 17ce6816eac4d41f8de183695bea5b330a5332d3
 			);
 			path = Newsbies;
 			sourceTree = "<group>";
@@ -308,11 +291,7 @@
 				4FD79A271B001D3600D81543 /* HRColorMapView.m in Sources */,
 				4FD79A241B001D3600D81543 /* HRBrightnessSlider.m in Sources */,
 				53D22B0E1AFE9D600044AA48 /* Theme.swift in Sources */,
-<<<<<<< HEAD
 				204C6EF51AFEFAEC00F6CEDB /* CustomizeViewController.swift in Sources */,
-=======
-				5344D43A1B00E3F700F89F69 /* Customization.swift in Sources */,
->>>>>>> cam
 				20E7CF461ACAE58D003609C3 /* HomeViewController.swift in Sources */,
 				4FD79A291B001D3600D81543 /* HRHSVColorUtil.m in Sources */,
 				204C6EF91B00080200F6CEDB /* BackgroundViewController.swift in Sources */,

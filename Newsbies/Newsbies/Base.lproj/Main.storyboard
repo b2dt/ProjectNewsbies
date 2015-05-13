@@ -336,6 +336,10 @@
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bx1-Yx-1ii">
                                         <rect key="frame" x="124" y="61" width="320" height="162"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="bEX-U3-Rde" id="dt7-eT-kbY"/>
+                                            <outlet property="delegate" destination="bEX-U3-Rde" id="7Dv-B2-MfT"/>
+                                        </connections>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Text size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-uc-fUh">
                                         <rect key="frame" x="219" y="233" width="131" height="21"/>

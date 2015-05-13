@@ -1,0 +1,43 @@
+### Swift dependencies file v0 ###
+provides:
+- "TextViewController"
+nominals:
+- "C8Newsbies18TextViewController"
+class-members:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+top-level:
+- !private "BooleanLiteralType"
+- !private "HRColorMapView"
+- !private "UIColor"
+- "UIViewController"
+member-access:
+- !private "CSo6UIView"
+- "CSo11UIResponder"
+- !private "CSo7UIColor"
+- "CSo8NSObject"
+- "PSs9AnyObject"
+- !private "C8Newsbies18TextViewController"
+- "CSo16UIViewController"
+- !private "CSo14HRColorMapView"
+- !private "CSo9UIControl"
+dynamic-lookup:
+cross-module:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
+- "/Users/noah/Desktop/ProjectNewsbies/Newsbies/Newsbies/My-Bridging-Header.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessCursor.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRBrightnessSlider.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorCursor.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRHSVColorUtil.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorInfoView.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorMapView.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/HRColorPickerView.h"
+- "/Users/noah/Desktop/ProjectNewsbies/NewsbiesResources/Color-Picker-for-iOS/ColorPicker/UIImage+CoreGraphics.h"

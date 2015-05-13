@@ -123,9 +123,32 @@ SWIFT_CLASS("_TtC8Newsbies7Article")
 @class NSBundle;
 @class NSCoder;
 
+<<<<<<< HEAD
 SWIFT_CLASS("_TtC8Newsbies23CustomizeViewController")
 @interface CustomizeViewController : UIViewController
 - (void)viewDidLoad;
+=======
+SWIFT_CLASS("_TtC8Newsbies24BackgroundViewController")
+@interface BackgroundViewController : UIViewController
+- (void)viewDidLoad;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISegmentedControl;
+@class UILabel;
+@class UIView;
+
+SWIFT_CLASS("_TtC8Newsbies23CustomizeViewController")
+@interface CustomizeViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified sampleText;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedControl;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified TextView;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified BackgroundView;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified ThemeView;
+- (void)viewDidLoad;
+- (IBAction)indexChanged:(UISegmentedControl * __nonnull)sender;
+>>>>>>> NoahsWorld
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -164,6 +187,18 @@ SWIFT_CLASS("_TtC8Newsbies10JsonParser")
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+<<<<<<< HEAD
+=======
+
+SWIFT_CLASS("_TtC8Newsbies18TextViewController")
+@interface TextViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+>>>>>>> NoahsWorld
 @class UIColor;
 
 SWIFT_CLASS("_TtC8Newsbies5Theme")
@@ -176,7 +211,18 @@ SWIFT_CLASS("_TtC8Newsbies5Theme")
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+<<<<<<< HEAD
 @class UILabel;
+=======
+
+SWIFT_CLASS("_TtC8Newsbies19ThemeViewController")
+@interface ThemeViewController : UIViewController
+- (void)viewDidLoad;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+>>>>>>> NoahsWorld
 @class UIScrollView;
 
 SWIFT_CLASS("_TtC8Newsbies17WebViewController")

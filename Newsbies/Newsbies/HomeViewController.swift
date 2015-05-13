@@ -35,14 +35,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.tView.reloadData()
             }
         }
-        //appDelegate.setCurArticleByIndex(0)
-        
-        //searching for file path for theme
-        let fileManager = NSFileManager.defaultManager()
-        let directoryPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentDir = directoryPaths[0] as! String
-        themeFilePath = documentDir.stringByAppendingPathComponent("theme.archive")
-        
         
 
     }

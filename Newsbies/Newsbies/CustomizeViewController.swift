@@ -34,6 +34,8 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
         TextView.hidden=false
         BackgroundView.hidden=true
         ThemeView.hidden=true
+        let themeHandler = ThemeHandler()
+        themeHandler.getThemesFromStorage()
         // Do any additional setup after loading the view.
     }
     
@@ -65,10 +67,15 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
         let newBackgroundColor = sampleText.backgroundColor
         let newFontColor = sampleText.textColor
         let newFontSize = sampleText.font.pointSize
-        
+        let newFont = UIFont(name: newFontFace, size: newFontSize)
         appDelegate.currTheme = Theme(fFace: newFontFace, fColor: newFontColor, fSize: Double(newFontSize), bColor: newBackgroundColor!)
         tView.backgroundColor = newBackgroundColor
-        NSKeyedArchiver.archiveRootObject(Theme(fFace: newFontFace, fColor: newFontColor, fSize: Double(newFontSize), bColor: newBackgroundColor!), toFile: appDelegate.getThemeFilePath())
+        TextView.backgroundColor=newBackgroundColor
+        ThemeView.backgroundColor=newBackgroundColor
+        BackgroundView.backgroundColor=newBackgroundColor
+        let themeHandler = ThemeHandler()
+        
+        themeHandler.saveNewThemeWithFont(newFont!, backgroundColor: newBackgroundColor!, textColor: newFontColor)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -86,5 +93,11 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
         sampleText.backgroundColor = UIColor.blackColor()
         sampleText.textColor = UIColor.whiteColor()
         sampleText.font = UIFont(name: "Times", size: 20)
+    }
+    
+    func selectedCell(childViewController:ThemeViewController, selectedTheme: Theme){
+        sampleText.backgroundColor = selectedTheme.backgroundColor
+        sampleText.font=UIFont(name: selectedTheme.fontFace, size: CGFloat(selectedTheme.fontSize))
+        sampleText.textColor = selectedTheme.fontColor
     }
 }

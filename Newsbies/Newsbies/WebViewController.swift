@@ -40,4 +40,7 @@ class WebViewController: UIViewController
     @IBAction func goToCustomizeFromWebView(segue: UIStoryboardSegue) {
         performSegueWithIdentifier("custWebView", sender: self)
     }
+    override func viewWillAppear(animated: Bool) {
+        scrollView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
+    }
 }

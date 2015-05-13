@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZN5-lR-Is3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZN5-lR-Is3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -427,33 +427,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="317"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Theme" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-m3-cic">
-                                <rect key="frame" x="263" y="148" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQx-PJ-4bM">
-                                <rect key="frame" x="261" y="193" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DTA-wY-fm3">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="317"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ci5-Lt-7LG">
+                                    <size key="itemSize" width="230" height="130"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="10" maxX="20" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="a9g-yb-agW" customClass="ThemeCollectionViewCell" customModule="Newsbies" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iyv-a3-MGW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="230" height="130"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-aC-x35">
+                                                            <rect key="frame" x="94" y="54" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="label" destination="hGL-aC-x35" id="OTm-U6-5ls"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <action selector="buttonWasPressed:" destination="khy-t5-5xp" eventType="touchUpInside" id="aea-vV-5Wt"/>
+                                    <outlet property="dataSource" destination="khy-t5-5xp" id="HtP-Mw-73s"/>
+                                    <outlet property="delegate" destination="khy-t5-5xp" id="v9z-ei-dqb"/>
                                 </connections>
-                            </button>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oQx-PJ-4bM" firstAttribute="top" secondItem="gVQ-m3-cic" secondAttribute="bottom" constant="24" id="0SI-GH-zu1"/>
-                            <constraint firstAttribute="centerX" secondItem="oQx-PJ-4bM" secondAttribute="centerX" id="SMk-bG-rER"/>
-                            <constraint firstAttribute="centerX" secondItem="gVQ-m3-cic" secondAttribute="centerX" id="b1x-4T-VmE"/>
-                            <constraint firstAttribute="centerY" secondItem="gVQ-m3-cic" secondAttribute="centerY" id="tn7-zM-hPE"/>
+                            <constraint firstAttribute="trailing" secondItem="DTA-wY-fm3" secondAttribute="trailing" id="KAV-UL-3WE"/>
+                            <constraint firstItem="DTA-wY-fm3" firstAttribute="top" secondItem="8B6-33-VYn" secondAttribute="bottom" id="WI1-Fg-sd6"/>
+                            <constraint firstItem="P68-hW-9pN" firstAttribute="top" secondItem="DTA-wY-fm3" secondAttribute="bottom" id="fpE-eq-VqG"/>
+                            <constraint firstItem="DTA-wY-fm3" firstAttribute="leading" secondItem="bj2-CT-Lmr" secondAttribute="leading" id="sjV-0t-4a3"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="ThemeBackground" destination="oQx-PJ-4bM" id="Qrj-ke-r0T"/>
+                        <outlet property="CollectionView" destination="DTA-wY-fm3" id="SC5-yU-9nV"/>
                         <outlet property="tView" destination="bj2-CT-Lmr" id="o2w-vs-Ofe"/>
                     </connections>
                 </viewController>

@@ -31,4 +31,8 @@ class TextViewController: UIViewController {
     @IBAction func buttonWasPressed(sender: AnyObject) {
         self.delegate?.childTextViewControllerDidPressButton(self)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        tView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
+    }
 }

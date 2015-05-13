@@ -22,4 +22,7 @@ class BackgroundViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(animated: Bool) {
+        tView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
+    }
 }

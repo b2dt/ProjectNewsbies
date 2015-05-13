@@ -48,10 +48,15 @@ class ThemeHandler: NSObject {
 	// If the file doesn't exist, this is where you can create it!
 	func initializeThemesList() {
 		// At the very end of this, archive the themes to disk.
-		let firstTheme = Theme(fFace: "AvenirLTStd-Medium", fColor: UIColor(red: 0.3, green: 0.25, blue: 0.1, alpha: 1.0), fSize: 14.0, bColor: UIColor.redColor())
-		let secondTheme = Theme(fFace: "HelveticaNeue-UltraLight", fColor: UIColor.grayColor(), fSize: 20.0, bColor: UIColor.blackColor())
+		let firstTheme = Theme(fFace: "Hoefler Text-Italic", fColor: UIColor(red: 0.313725, green: 0.541176, blue: 0.160784, alpha: 1.0), fSize: 14.0, bColor: UIColor(red: 0.66274, green: 0.96078, blue: 0.73725, alpha: 1.0))
+        
+		let secondTheme = Theme(fFace: "Papyrus", fColor: UIColor(red: 0.00392, green: 0.00392, blue: 0.87450, alpha: 1.0), fSize: 18.0, bColor: UIColor(red: 1.0, green: 0.50196, blue: 0.0, alpha: 1.0))
+        
+        let thirdTheme = Theme(fFace: "HelveticaNeue-UltraLight", fColor: UIColor.whiteColor(), fSize: 12.0, bColor: UIColor.blackColor())
+        
+        let fourthTheme = Theme(fFace: "MarkerFelt-Thin", fColor: UIColor(red: 0.99607, green: 0.18039, blue: 0.60392, alpha: 1.0), fSize: 16.0, bColor: UIColor(red: 0.50196, green: 0.0, blue: 1.0, alpha: 1.0))
 
-		writeThemesToDisk([firstTheme, secondTheme])
+		writeThemesToDisk([firstTheme, secondTheme, thirdTheme, fourthTheme])
 	}
 
 	func writeThemesToDisk(themes:[Theme]) {

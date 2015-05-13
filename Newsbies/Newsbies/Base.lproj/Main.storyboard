@@ -132,7 +132,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="UTv-c3-WZk">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="hed-Or-iNq">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="hed-Or-iNq">
                             <connections>
                                 <action selector="doneButtonPressed" destination="apD-2r-LBH" id="N1l-Ws-afP"/>
                             </connections>
@@ -466,6 +466,6 @@
         <image name="Image" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xzd-1R-9ja"/>
+        <segue reference="pyR-dJ-qFX"/>
     </inferredMetricsTieBreakers>
 </document>

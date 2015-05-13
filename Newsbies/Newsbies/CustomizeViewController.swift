@@ -67,7 +67,7 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
         let newFontSize = sampleText.font.pointSize
         
         appDelegate.currTheme = Theme(fFace: newFontFace, fColor: newFontColor, fSize: Double(newFontSize), bColor: newBackgroundColor!)
-        
+        tView.backgroundColor = newBackgroundColor
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -82,6 +82,8 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
     func childTextViewControllerDidPressButton(childViewController: TextViewController)
     {
         //sampleText.font = UIFont(name: sampleText.font.fontName, size: sampleText.font.pointSize+2)
-        sampleText.backgroundColor = UIColor.blueColor()
+        sampleText.backgroundColor = UIColor.blackColor()
+        sampleText.textColor = UIColor.whiteColor()
+        sampleText.font = UIFont(name: "Times", size: 20)
     }
 }

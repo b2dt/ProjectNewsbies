@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var articlesList=Array<Article>()
     var currArticle: Article?
-    var currTheme: Theme?
+    var currTheme = Theme(fFace: "MarkerFelt-Thin", fColor: UIColor(red: 0.02745, green: 0.18039, blue: 0.5921568, alpha: 1.0), fSize: 16.0, bColor: UIColor(red: 0.96470588, green: 0.968627451, blue: 0.8509803922, alpha: 1.0))
     
     func getCurrentTheme() -> Theme
     {
-        return currTheme!
+        return currTheme
     }
     
     func setCurArticleByIndex(index:Int)

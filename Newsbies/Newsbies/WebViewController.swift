@@ -23,9 +23,9 @@ class WebViewController: UIViewController
         self.navigationItem.title = appDelegate.getCurrArticle().category
         headline.text = appDelegate.getCurrArticle().articleName
         body.text = appDelegate.getCurrArticle().body.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
-        headline.font = UIFont.systemFontOfSize(CGFloat(appDelegate.getCurrentTheme().fontSize+8))
+        headline.font = UIFont(name: appDelegate.getCurrentTheme().fontFace, size: CGFloat(appDelegate.getCurrentTheme().fontSize+8))
         headline.textColor = appDelegate.getCurrentTheme().fontColor
-        body.font=UIFont.systemFontOfSize(CGFloat(appDelegate.getCurrentTheme().fontSize))
+        body.font=UIFont(name: appDelegate.getCurrentTheme().fontFace, size: CGFloat(appDelegate.getCurrentTheme().fontSize))
         body.textColor = appDelegate.getCurrentTheme().fontColor
         scrollView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
         //scrollView.addSubview(articleView)

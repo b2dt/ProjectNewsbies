@@ -28,12 +28,6 @@
                                     <action selector="indexChanged:" destination="apD-2r-LBH" eventType="valueChanged" id="W86-Nk-wvP"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgU-Ni-7Ii">
-                                <rect key="frame" x="258" y="484" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BH-R6-Nhv">
                                 <rect key="frame" x="16" y="127" width="568" height="317"/>
                                 <connections>
@@ -52,6 +46,12 @@
                                     <segue destination="khy-t5-5xp" kind="embed" identifier="theme" id="imD-G0-8rN"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgU-Ni-7Ii">
+                                <rect key="frame" x="258" y="484" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -131,12 +131,20 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="UTv-c3-WZk">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="hed-Or-iNq">
+                            <connections>
+                                <action selector="doneButtonPressed" destination="apD-2r-LBH" id="N1l-Ws-afP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="BackgroundView" destination="caI-7d-Q6Z" id="VBh-5l-boK"/>
                         <outlet property="TextView" destination="9BH-R6-Nhv" id="QSS-32-qeP"/>
                         <outlet property="ThemeView" destination="GEo-rS-GRw" id="AXA-ri-5BR"/>
                         <outlet property="sampleText" destination="wgU-Ni-7Ii" id="AfK-1d-8Cr"/>
                         <outlet property="segmentedControl" destination="p4P-jb-81A" id="mVi-NN-gGE"/>
+                        <outlet property="tView" destination="ITA-Gb-kRy" id="1aq-hR-0U6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fq3-G4-HuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,7 +163,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XFz-bh-obu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XFz-bh-obu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="542"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -208,7 +216,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ZZR-mL-X1X">
-                        <barButtonItem key="rightBarButtonItem" title="Customize" id="8kH-Xk-BNN">
+                        <barButtonItem key="rightBarButtonItem" image="Image" id="8kH-Xk-BNN">
                             <connections>
                                 <action selector="goToCustomize:" destination="BYZ-38-t0r" id="OgB-vd-RqD"/>
                                 <segue destination="apD-2r-LBH" kind="show" identifier="customize" id="xzd-1R-9ja"/>
@@ -224,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="1192" y="327"/>
         </scene>
-        <!--Title-->
+        <!--Web View Controller-->
         <scene sceneID="lez-wI-i3A">
             <objects>
                 <viewController id="RYK-mu-jfi" customClass="WebViewController" customModule="Newsbies" customModuleProvider="target" sceneMemberID="viewController">
@@ -276,8 +284,8 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="MKM-nF-xSp">
-                        <barButtonItem key="rightBarButtonItem" title="Customize" id="uTa-yo-7Ed">
+                    <navigationItem key="navigationItem" id="MKM-nF-xSp">
+                        <barButtonItem key="rightBarButtonItem" image="Image" id="uTa-yo-7Ed">
                             <connections>
                                 <action selector="goToCustomizeFromWebView:" destination="RYK-mu-jfi" id="EMF-UE-qXW"/>
                             </connections>
@@ -303,6 +311,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eJM-vd-MKl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -325,22 +334,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="317"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4f-E0-fkH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4f-E0-fkH">
                                 <rect key="frame" x="263" y="143" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99d-zL-Smc">
+                                <rect key="frame" x="259" y="189" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWasPressed:" destination="bEX-U3-Rde" eventType="touchUpInside" id="6cN-nZ-1la"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="99d-zL-Smc" secondAttribute="centerX" constant="2" id="SqA-kG-lf6"/>
                             <constraint firstAttribute="centerX" secondItem="H4f-E0-fkH" secondAttribute="centerX" id="lIT-d7-uNL"/>
                             <constraint firstAttribute="centerY" secondItem="H4f-E0-fkH" secondAttribute="centerY" constant="5.5" id="lTk-qB-PTa"/>
+                            <constraint firstItem="99d-zL-Smc" firstAttribute="top" secondItem="H4f-E0-fkH" secondAttribute="bottom" constant="25" id="ySp-lx-X1e"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>
                         <outlet property="FontText" destination="H4f-E0-fkH" id="rHJ-yh-P91"/>
+                        <outlet property="TextButton" destination="99d-zL-Smc" id="9Au-mu-4Du"/>
+                        <outlet property="tView" destination="8Tb-3N-R1T" id="ebX-Yd-j45"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjj-hI-O0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -371,7 +393,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonWasPressed:" destination="PdC-3c-crZ" eventType="touchUpInside" id="bTb-I2-sf9"/>
+                                    <action selector="buttonWasPressed:" destination="PdC-3c-crZ" eventType="touchUpInside" id="Wga-ZU-Fse"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -386,6 +408,7 @@
                     <toolbarItems/>
                     <connections>
                         <outlet property="backgroundButton" destination="hwY-MF-bLG" id="NeX-bn-7uL"/>
+                        <outlet property="tView" destination="Cp4-WZ-cea" id="g0Q-ce-RGu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BA2-Vf-5JM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -410,21 +433,39 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQx-PJ-4bM">
+                                <rect key="frame" x="261" y="193" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWasPressed:" destination="khy-t5-5xp" eventType="touchUpInside" id="aea-vV-5Wt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oQx-PJ-4bM" firstAttribute="top" secondItem="gVQ-m3-cic" secondAttribute="bottom" constant="24" id="0SI-GH-zu1"/>
+                            <constraint firstAttribute="centerX" secondItem="oQx-PJ-4bM" secondAttribute="centerX" id="SMk-bG-rER"/>
                             <constraint firstAttribute="centerX" secondItem="gVQ-m3-cic" secondAttribute="centerX" id="b1x-4T-VmE"/>
                             <constraint firstAttribute="centerY" secondItem="gVQ-m3-cic" secondAttribute="centerY" id="tn7-zM-hPE"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="ThemeBackground" destination="oQx-PJ-4bM" id="Qrj-ke-r0T"/>
+                        <outlet property="tView" destination="bj2-CT-Lmr" id="o2w-vs-Ofe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ac1-NU-Cuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2721" y="-128.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pyR-dJ-qFX"/>
+        <segue reference="xzd-1R-9ja"/>
     </inferredMetricsTieBreakers>
 </document>

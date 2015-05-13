@@ -16,10 +16,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var articleList = [Article]()
     var jsonParser: JsonParser = JsonParser()
     //var urlString:String = "http://api.nytimes.com/svc/search/v2/articlesearch.json?=new+york+times&api-key=5057b2a351479ebc6a1582e02270d75d:5:71571215"
-    var urlString:String = "http://ec2-52-11-214-35.us-west-2.compute.amazonaws.com:5050/data?ids=183762,183802"
-    
+    var urlString:String = "http://ec2-52-11-214-35.us-west-2.compute.amazonaws.com:5050/data?ids=183762,183771"
+    var defaultFontFace = "comic sans"
+    var defaultFontColor = UIColor(red: 0.02745, green: 0.18039, blue: 0.5921568, alpha: 1.0)
+    var defaultFontSize = 16.0
+    var defaultBackgroundColor = UIColor(red: 0.96470588, green: 0.968627451, blue: 0.8509803922, alpha: 1.0)
+    //F7F5D9, 7 46 151
+    //072e97 246 247 217
     override func viewDidLoad()
     {
+        appDelegate.currTheme = Theme(fFace: defaultFontFace, fColor: defaultFontColor, fSize: defaultFontSize, bColor: defaultBackgroundColor)
+        tView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
         super.viewDidLoad()
         //load json data and then put it in the cells of the table
         jsonParser.load(urlString) {
@@ -43,8 +50,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tView.dequeueReusableCellWithIdentifier(prototypeCellIdentifier) as! UITableViewCell
         
         cell.textLabel?.text = appDelegate.articlesList[indexPath.row].articleName
-        
+        cell.textLabel?.textColor = appDelegate.getCurrentTheme().fontColor
+        cell.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
+        cell.textLabel!.font = UIFont.systemFontOfSize(CGFloat(appDelegate.getCurrentTheme().fontSize+8))
         cell.detailTextLabel?.text = appDelegate.articlesList[indexPath.row].category
+        cell.detailTextLabel?.textColor = appDelegate.getCurrentTheme().fontColor
+        cell.detailTextLabel!.font = UIFont.systemFontOfSize(CGFloat(appDelegate.getCurrentTheme().fontSize))
         
         return cell
     }

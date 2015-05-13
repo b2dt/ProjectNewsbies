@@ -8,24 +8,18 @@
 
 import UIKit
 
-protocol ChildBackgroundViewControllerDelegate
-{
-    func childViewControllerDidPressButton(childViewController:BackgroundViewController)
-}
 
 class BackgroundViewController: UIViewController {
 
-    var delegate:ChildBackgroundViewControllerDelegate?
+    @IBOutlet var tView: UIView!
     @IBOutlet weak var backgroundButton: UIButton!
-    
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        var delegate:ChildBackgroundViewControllerDelegate?
+        tView.backgroundColor=appDelegate.getCurrentTheme().backgroundColor
+
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func buttonWasPressed(sender: AnyObject) {
-        self.delegate?.childViewControllerDidPressButton(self)
     }
 }

@@ -8,15 +8,18 @@
 
 import UIKit
 
-class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate, ChildBackgroundViewControllerDelegate, ChildThemeViewControllerDelegate{
+class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate{
 
+    @IBOutlet var tView: UIView!
     @IBOutlet weak var sampleText: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var TextView: UIView!
     @IBOutlet weak var BackgroundView: UIView!
     @IBOutlet weak var ThemeView: UIView!
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
-    struct Constants {
+    struct Constants
+    {
         static let textSegue="text"
         static let backgroundSegue="background"
         static let themeSegue="theme"
@@ -24,8 +27,10 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sampleText.textColor=appDelegate.getCurrentTheme().fontColor
+        sampleText.font = UIFont(name: appDelegate.getCurrentTheme().fontFace, size: CGFloat(appDelegate.getCurrentTheme().fontSize))
+        tView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
 
-        sampleText.text = "Text"
         TextView.hidden=false
         BackgroundView.hidden=true
         ThemeView.hidden=true
@@ -36,49 +41,47 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
     {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            sampleText.text = "Text"
             TextView.hidden = false
             BackgroundView.hidden = true
             ThemeView.hidden=true
         case 1:
-            sampleText.text = "Background"
             TextView.hidden = true
             BackgroundView.hidden = false
             ThemeView.hidden=true
         case 2:
-            sampleText.text = "Themes"
             TextView.hidden = true
             BackgroundView.hidden = true
             ThemeView.hidden=false
         default:
-            sampleText.text = "Text"
             TextView.hidden = false
             BackgroundView.hidden = true
             ThemeView.hidden=true
         }
     }
     
+    @IBAction func doneButtonPressed()
+    {
+        let newFontFace = sampleText.font.fontName
+        let newBackgroundColor = sampleText.backgroundColor
+        let newFontColor = sampleText.textColor
+        let newFontSize = sampleText.font.pointSize
+        
+        appDelegate.currTheme = Theme(fFace: newFontFace, fColor: newFontColor, fSize: Double(newFontSize), bColor: newBackgroundColor!)
+        
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        if(segue.identifier == Constants.textSegue)
+        if segue.identifier==Constants.textSegue
         {
             let childViewController = segue.destinationViewController as! TextViewController
-            //childViewController.delegate = self
-        }
-        else if(segue.identifier == Constants.backgroundSegue)
-        {
-            let childViewController = segue.destinationViewController as! BackgroundViewController
             childViewController.delegate = self
-        }
-        else if(segue.identifier == Constants.themeSegue)
-        {
-            let childViewController = segue.destinationViewController as! ThemeViewController
-            //childViewController.delegate = self
         }
     }
     
-    func childViewControllerDidPressButton(childViewController: BackgroundViewController)
+    func childTextViewControllerDidPressButton(childViewController: TextViewController)
     {
-        sampleText.backgroundColor=UIColor.blueColor()
+        //sampleText.font = UIFont(name: sampleText.font.fontName, size: sampleText.font.pointSize+2)
+        sampleText.backgroundColor = UIColor.blueColor()
     }
 }

@@ -8,18 +8,16 @@
 
 import UIKit
 
-protocol ChildThemeViewControllerDelegate
-{
-    func childViewControllerDidPressButton(childViewController:ThemeViewController)
-}
 class ThemeViewController: UIViewController {
 
-    var delegate:ChildThemeViewControllerDelegate?
-
+    @IBOutlet var tView: UIView!
+    @IBOutlet weak var ThemeBackground: UIButton!
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var delegate:ChildThemeViewControllerDelegate?
+        tView.backgroundColor=appDelegate.getCurrentTheme().backgroundColor
+
 
     }
 }

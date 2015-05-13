@@ -8,16 +8,9 @@
 
 import UIKit
 
-class WebViewController: UIViewController{
-    //JQuery solution, no Javascript solution yet
-    //http://stackoverflow.com/questions/5824079/using-important-in-jquerys-css-function
-    //Possible Javascript solution
-    //http://stackoverflow.com/questions/462537/overriding-important-style
-    //Importing external stylesheet
-    //http://makeapppie.com/2014/10/28/swift-swift-using-uiwebviews-in-swift/
-    
+class WebViewController: UIViewController
+{
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    var defaults = ["textFontSize":12,"textFontColor":"blue", "backgroundColor":"black"]
     @IBOutlet weak var headline: UILabel!
     @IBOutlet weak var body: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -30,7 +23,11 @@ class WebViewController: UIViewController{
         self.navigationItem.title = appDelegate.getCurrArticle().category
         headline.text = appDelegate.getCurrArticle().articleName
         body.text = appDelegate.getCurrArticle().body.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
-        headline.font = UIFont(name: headline.font.fontName, size: 28)
+        headline.font = UIFont.systemFontOfSize(CGFloat(appDelegate.getCurrentTheme().fontSize+8))
+        headline.textColor = appDelegate.getCurrentTheme().fontColor
+        body.font=UIFont.systemFontOfSize(CGFloat(appDelegate.getCurrentTheme().fontSize))
+        body.textColor = appDelegate.getCurrentTheme().fontColor
+        scrollView.backgroundColor = appDelegate.getCurrentTheme().backgroundColor
         //scrollView.addSubview(articleView)
         scrollView.contentSize=CGSizeMake(scrollView.contentSize.width, headline.frame.size.height+body.frame.size.height+30)
     }

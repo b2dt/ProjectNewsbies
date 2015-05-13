@@ -10,17 +10,25 @@ import UIKit
 
 protocol ChildTextViewControllerDelegate
 {
-    func childViewControllerDidPressButton(childViewController:TextViewController)
+    func childTextViewControllerDidPressButton(childViewController:TextViewController)
 }
 
 class TextViewController: UIViewController {
 
+    @IBOutlet var tView: UIView!
+    @IBOutlet weak var TextButton: UIButton!
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var delegate:ChildTextViewControllerDelegate?
 
     @IBOutlet weak var FontText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var delegate:ChildTextViewControllerDelegate?
+        tView.backgroundColor=appDelegate.getCurrentTheme().backgroundColor
+        
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func buttonWasPressed(sender: AnyObject) {
+        self.delegate?.childTextViewControllerDidPressButton(self)
     }
 }

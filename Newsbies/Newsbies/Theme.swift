@@ -14,6 +14,16 @@ class Theme: NSObject, NSCoding {
     var fontSize: Double!
     var backgroundColor: UIColor!
     
+    
+    convenience init(fFace:String, fColor:UIColor, fSize:Double, bColor:UIColor)
+    {
+        self.init()
+        self.fontFace = fFace
+        self.fontColor = fColor
+        self.fontSize = fSize
+        self.backgroundColor = bColor
+    }
+    
     required convenience init(coder decoder: NSCoder) {
         self.init()
         self.fontFace = decoder.decodeObjectForKey("fontFace") as! String
@@ -21,6 +31,7 @@ class Theme: NSObject, NSCoding {
         self.fontSize = decoder.decodeDoubleForKey("fontSize") as Double
         self.backgroundColor = decoder.decodeObjectForKey("backgroundColor") as! UIColor
     }
+
     
     func encodeWithCoder(coder: NSCoder) {
         coder.encodeObject(self.fontFace, forKey: "fontFace")

@@ -11,13 +11,11 @@ class Article: NSObject
 {
     var articleName: String
     var category:String
-    //var webURL:String
     var body:String
     
     init(artName: String, artBody: String, artCategory: String)
     {
         articleName = artName
-        //webURL = url
         body = artBody
         category = artCategory
     }

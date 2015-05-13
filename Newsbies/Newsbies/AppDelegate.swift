@@ -14,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var articlesList=Array<Article>()
     var currArticle: Article?
+    var currTheme: Theme?
+    
+    func getCurrentTheme() -> Theme
+    {
+        return currTheme!
+    }
     
     func setCurArticleByIndex(index:Int)
     {

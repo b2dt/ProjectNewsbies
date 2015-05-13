@@ -181,11 +181,18 @@ SWIFT_CLASS("_TtC8Newsbies10JsonParser")
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
 
 SWIFT_CLASS("_TtC8Newsbies18TextViewController")
-@interface TextViewController : UIViewController
+@interface TextViewController : UIViewController <UIPickerViewDelegate>
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified fontWheel;
+@property (nonatomic, readonly, copy) NSArray * __nonnull fontFamilyNames;
+@property (nonatomic, copy) NSArray * __nonnull fontz;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __null_unspecified)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __null_unspecified)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

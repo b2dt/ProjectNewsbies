@@ -9,11 +9,11 @@ top-level:
 - !private "UIColor"
 - "UIViewController"
 member-access:
-- !private "CSo7UIColor"
+- !private "CSo6UIView"
 - "PSs9AnyObject"
 - "CSo8NSObject"
 - "CSo16UIViewController"
-- !private "CSo6UIView"
+- !private "CSo7UIColor"
 - "CSo11UIResponder"
 - !private "C8Newsbies24BackgroundViewController"
 dynamic-lookup:

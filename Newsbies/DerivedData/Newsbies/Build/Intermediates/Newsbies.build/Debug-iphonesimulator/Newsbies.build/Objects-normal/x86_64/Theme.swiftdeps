@@ -6,24 +6,24 @@ nominals:
 class-members:
 - "encodeWithCoder"
 - "backgroundColor"
-- "fontFace"
 - "fontColor"
+- "fontFace"
 top-level:
 - "Double"
+- "String"
+- "UIColor"
 - !private "StringLiteralType"
 - "NSObject"
 - "NSCoding"
-- "String"
 - "NSCoder"
-- "UIColor"
 member-access:
-- "PSo8NSCoding"
 - "C8Newsbies5Theme"
-- !private "SS"
 - "CSo8NSObject"
-- "PSs9AnyObject"
 - !private "SQ"
+- "PSo8NSCoding"
 - !private "CSo7NSCoder"
+- "PSs9AnyObject"
+- !private "SS"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

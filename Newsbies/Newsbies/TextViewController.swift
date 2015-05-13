@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class TextViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class TextViewController: UIViewController {
         super.viewDidLoad()
         let myColorWheel = HRColorMapView()
         myColorWheel.hidden = false
+        
         self.view.backgroundColor = UIColor.lightGrayColor()
 
         // Do any additional setup after loading the view.

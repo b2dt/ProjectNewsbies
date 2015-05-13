@@ -10,9 +10,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    
+    var themeFilePath: String?
     var window: UIWindow?
     var articlesList=Array<Article>()
+    var themes=Array<Theme>()
     var currArticle: Article?
     var currTheme = Theme(fFace: "MarkerFelt-Thin", fColor: UIColor(red: 0.02745, green: 0.18039, blue: 0.5921568, alpha: 1.0), fSize: 16.0, bColor: UIColor(red: 0.96470588, green: 0.968627451, blue: 0.8509803922, alpha: 1.0))
     
@@ -30,7 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         return currArticle!
     }
-
+    
+    func getThemeFilePath()-> String
+    {
+        return themeFilePath!
+    }
+    
+    func getThemes()->[Theme]
+    {
+        return themes
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

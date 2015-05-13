@@ -17,6 +17,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var jsonParser: JsonParser = JsonParser()
     //var urlString:String = "http://api.nytimes.com/svc/search/v2/articlesearch.json?=new+york+times&api-key=5057b2a351479ebc6a1582e02270d75d:5:71571215"
     var urlString:String = "http://ec2-52-11-214-35.us-west-2.compute.amazonaws.com:5050/data?ids=183762,183771"
+    var themeFilePath: String?
     
     //F7F5D9, 7 46 151
     //072e97 246 247 217
@@ -35,6 +36,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
         //appDelegate.setCurArticleByIndex(0)
+        
+        //searching for file path for theme
+        let fileManager = NSFileManager.defaultManager()
+        let directoryPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentDir = directoryPaths[0] as! String
+        themeFilePath = documentDir.stringByAppendingPathComponent("theme.archive")
+        
+        
+
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return appDelegate.articlesList.count

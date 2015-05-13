@@ -68,6 +68,7 @@ class CustomizeViewController: UIViewController, ChildTextViewControllerDelegate
         
         appDelegate.currTheme = Theme(fFace: newFontFace, fColor: newFontColor, fSize: Double(newFontSize), bColor: newBackgroundColor!)
         tView.backgroundColor = newBackgroundColor
+        NSKeyedArchiver.archiveRootObject(Theme(fFace: newFontFace, fColor: newFontColor, fSize: Double(newFontSize), bColor: newBackgroundColor!), toFile: appDelegate.getThemeFilePath())
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
